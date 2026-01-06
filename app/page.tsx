@@ -1,13 +1,14 @@
 import { supabase } from './lib/supabaseClient';
 import AddJobForm from './components/AddJobForm';
-import JobCard from './components/JobCard'; // Import the new card
+import JobList from './components/JobList'; // Import the new list component
 
 export default async function Home() {
   
+  // 1. Fetch data from Supabase
+  // We don't need .order() here anymore because JobList handles it!
   const { data: applications, error } = await supabase
     .from('applications')
-    .select('*')
-    .order('date_applied', { ascending: false });
+    .select('*');
 
   if (error) {
     console.error('Error fetching:', error);
@@ -20,18 +21,11 @@ export default async function Home() {
 
         <AddJobForm />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-          
-          {applications?.map((job) => (
-            // We now use the JobCard component for each item
-            <JobCard key={job.id} job={job} />
-          ))}
-
-          {(!applications || applications.length === 0) && (
-            <p className="text-gray-500 col-span-3">No applications found.</p>
-          )}
-
+        <div className="mt-8">
+            {/* 2. Pass the data to the Client Component */}
+            <JobList jobs={applications} />
         </div>
+        
       </main>
     </div>
   );
