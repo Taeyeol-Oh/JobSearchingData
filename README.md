@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+# Job Application Tracker
+
+A custom-built dashboard to manage my job search, built with **Next.js**, **TypeScript**, and **Supabase**.
+
+**Features:**
+* **Full CRUD:** Add, read, and update job applications.
+* **Organization:** Sort, search, and filter capabilities.
+* **Smart UI:** Auto-fills company websites and offers a clean, responsive interface using Tailwind CSS.
+* **Database:** Persists all data securely using Supabase (PostgreSQL).
+
 ## Getting Started
 
 First, run the development server:
