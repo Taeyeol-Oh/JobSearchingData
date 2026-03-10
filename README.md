@@ -10,6 +10,8 @@ A custom-built dashboard to manage my job search, built with **Next.js**, **Type
 * **Smart UI:** Auto-fills company websites and offers a clean, responsive interface using Tailwind CSS.
 * **Database:** Persists all data securely using Supabase (PostgreSQL).
 
+![Job Application Tracker Dashboard](./readmeimage/CAPTURE.png)
+
 ## Getting Started
 
 First, run the development server:
