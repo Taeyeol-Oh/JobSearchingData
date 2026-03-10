@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 # Job Application Tracker
 
+![Job Application Tracker Dashboard](./readmeimage/Capture.PNG)
+
 A custom-built dashboard to manage my job search, built with **Next.js**, **TypeScript**, and **Supabase**.
 
 **Features:**
@@ -10,7 +12,7 @@ A custom-built dashboard to manage my job search, built with **Next.js**, **Type
 * **Smart UI:** Auto-fills company websites and offers a clean, responsive interface using Tailwind CSS.
 * **Database:** Persists all data securely using Supabase (PostgreSQL).
 
-![Job Application Tracker Dashboard](./readmeimage/Capture.PNG)
+
 
 ## Getting Started
 
